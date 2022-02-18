@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Example app</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +12,26 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-card class="ion-margin-horizontal">
+      <ion-card-content class="ion-no-padding ion-padding-horizontal">
+        <ion-input
+          type="email"
+          placeholder="Email address"
+          class="ion-text-left"
+        ></ion-input>
+      </ion-card-content>
+    </ion-card>
+    <ion-card class="ion-margin-horizontal">
+      <ion-card-content class="ion-no-padding ion-padding-horizontal">
+        <ion-input
+          type="password"
+          placeholder="Password"
+          class="ion-text-left"
+        ></ion-input>
+      </ion-card-content>
+    </ion-card>
+    <ion-button class="ion-margin-horizontal" expand="block" (click)="login()">
+      Login
+    </ion-button>
   </div>
 </ion-content>

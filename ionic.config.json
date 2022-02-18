@@ -1,0 +1,7 @@
+{
+  "name": "ion-toast-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
